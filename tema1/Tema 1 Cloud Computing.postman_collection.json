@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "74429f00-8433-4c58-987c-58e2d9e3ea85",
+		"name": "Tema 1 Cloud Computing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27493515"
+	},
+	"item": [
+		{
+			"name": "List students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/students",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List student by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/students/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List grades of a student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/students/2/grades",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"2",
+						"grades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List subjects of a student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/students/2/subjects",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"2",
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Student 4\",\r\n    \"year\":\"3\" \r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/students",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Subject to student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Cloud\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/students/9/subjects",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"9",
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add grade to student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Cloud\",\r\n    \"grade\":\"9\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/students/9/grades",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"9",
+						"grades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update grade",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Cloud\",\r\n    \"grade\":\"8\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/students/2/grades/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"2",
+						"grades",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Student 5\",\r\n    \"year\": \"2\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/students/9",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleting grade",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/students/2/grades/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"2",
+						"grades",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleting student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/students/9",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
