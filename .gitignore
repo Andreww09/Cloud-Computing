@@ -1,0 +1,14 @@
+/tema2/server/target/
+/tema2/api/node_modules/
+/tema2/api/package.json
+/tema2/api/package-lock.json
+/tema2/my-app/package.json
+/tema2/my-app/package-lock.json
+/tema2/my-app/node_modules/
+/tema2/my-app/public/
+/tema2/my-app/src/logo.svg
+/tema2/server/pom.xml
+/tema2/server/src/test/
+/tema2/server/src/main/resources/
+
+
